@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f1923">
+
+<title>Yatay Delgi Projeleri | Kazısız Altyapı Proje Rehberi — Türkiye</title>
+<meta name="description" content="Yatay delgi projeleri için kapsamlı rehber. Belediyeler, yatırımcılar ve proje sahipleri için HDD maliyet hesaplama, ihale hazırlığı, teknik şartname ve proje örnekleri.">
+<meta name="keywords" content="yatay delgi projesi, HDD proje, kazısız altyapı ihale, yatay delgi maliyet, HDD teknik şartname, boru döşeme projesi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.yataydelgi.net/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:title" content="Yatay Delgi Projeleri — Türkiye Kazısız Altyapı Portalı">
+<meta property="og:description" content="Belediyeler ve proje sahipleri için yatay delgi proje rehberi, maliyet hesaplama ve ihale hazırlığı.">
+<meta property="og:url" content="https://www.yataydelgi.net/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Yatay Delgi Projeleri",
+  "url": "https://www.yataydelgi.net",
+  "description": "Türkiye'de yatay delgi projeleri için belediyeler ve yatırımcılara yönelik proje rehberi.",
+  "inLanguage": "tr-TR"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230f1923'/%3E%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%234ade80' stroke-width='8'/%3E%3C/svg%3E">
+
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --ink: #0f1923;
+    --ink-2: #1e2d3d;
+    --ink-3: #2d4156;
+    --paper: #f5f4f0;
+    --paper-2: #eeecea;
+    --green: #22c55e;
+    --green-dim: #16a34a;
+    --green-pale: #dcfce7;
+    --amber: #f59e0b;
+    --amber-pale: #fef3c7;
+    --text: #1e2d3d;
+    --text-2: #4a6070;
+    --text-3: #7a9ab0;
+    --line: rgba(30, 45, 61, 0.12);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--paper);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* Announcement bar */
+  .ann {
+    background: var(--ink);
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    padding: 9px 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+
+  .ann a { color: var(--green); text-decoration: underline; }
+
+  /* Header */
+  header {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .logo-ring {
+    width: 34px;
+    height: 34px;
+    border: 2.5px solid var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'DM Mono', monospace;
+    color: var(--green);
+  }
+
+  nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-2);
+    margin-left: 32px;
+    transition: color 0.2s;
+  }
+
+  nav a:hover { color: var(--ink); }
+
+  .header-cta {
+    background: var(--ink);
+    color: var(--green) !important;
+    padding: 9px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'DM Mono', monospace;
+    letter-spacing: 0.02em;
+    transition: background 0.2s;
+    margin-left: 32px;
+  }
+
+  .header-cta:hover { background: var(--ink-3); }
+
+  /* Hero */
+  .hero {
+    background: var(--ink);
+    color: white;
+    padding: 100px 32px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgba(34, 197, 94, 0.12);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(34, 197, 94, 0.08);
+    border-radius: 50%;
+  }
+
+  .hero-wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .hero-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-label::before {
+    content: '';
+    width: 40px;
+    height: 1px;
+    background: var(--green);
+  }
+
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(40px, 5.5vw, 72px);
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 28px;
+    letter-spacing: -0.02em;
+  }
+
+  h1 em {
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .hero-desc {
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 40px;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn-fill {
+    background: var(--green);
+    color: var(--ink);
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btn-fill:hover { background: #16a34a; transform: translateY(-1px); }
+
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.25);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover { border-color: rgba(255,255,255,0.6); }
+
+  /* Hero stats panel */
+  .hero-panel {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+  }
+
+  .panel-title {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+
+  .panel-stat {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .panel-stat:last-child { border-bottom: none; padding-bottom: 0; }
+  .panel-stat:first-of-type { padding-top: 0; }
+
+  .panel-stat-label { font-size: 13px; color: rgba(255,255,255,0.55); }
+  .panel-stat-value { font-weight: 700; color: white; font-size: 17px; }
+  .panel-stat-value.green { color: var(--green); }
+
+  /* Ticker */
+  .ticker {
+    background: var(--green);
+    overflow: hidden;
+    padding: 14px 0;
+  }
+
+  .ticker-inner {
+    display: flex;
+    gap: 60px;
+    white-space: nowrap;
+    animation: ticker 50s linear infinite;
+    will-change: transform;
+  }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .ticker-item {
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .ticker-dot {
+    width: 5px;
+    height: 5px;
+    background: var(--ink);
+    border-radius: 50%;
+    opacity: 0.4;
+  }
+
+  /* Section wrapper */
+  .section {
+    padding: 100px 32px;
+  }
+
+  .section-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--green-dim);
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(30px, 4vw, 52px);
+    line-height: 1.15;
+    font-weight: 400;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .section-desc {
+    font-size: 17px;
+    color: var(--text-2);
+    max-width: 680px;
+    line-height: 1.7;
+    margin-bottom: 64px;
+  }
+
+  /* Project types section */
+  .project-types { background: var(--paper); }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+
+  .project-tile {
+    background: var(--paper);
+    padding: 48px 40px;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+
+  .project-tile:hover { background: var(--paper-2); }
+
+  .tile-num {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--text-3);
+    margin-bottom: 32px;
+    letter-spacing: 0.1em;
+  }
+
+  .tile-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--green-pale);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    font-size: 22px;
+  }
+
+  .project-tile h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .project-tile p {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .tile-specs {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .tile-spec {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--green-dim);
+    background: var(--green-pale);
+    padding: 4px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.05em;
+  }
+
+  /* Cost table section */
+  .cost-section { background: var(--ink); color: white; }
+  .cost-section .eyebrow { color: var(--green); }
+  .cost-section h2 { color: white; }
+  .cost-section .section-desc { color: rgba(255,255,255,0.65); }
+
+  .cost-table-wrap {
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  table.cost-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table.cost-table th {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--green);
+    text-align: left;
+    padding: 14px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+  }
+
+  table.cost-table td {
+    padding: 14px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+  }
+
+  table.cost-table tr:last-child td { border-bottom: none; }
+
+  table.cost-table tr:hover td { background: rgba(255,255,255,0.03); }
+
+  table.cost-table td:first-child { font-weight: 600; color: white; }
+  table.cost-table td.green { color: var(--green); font-weight: 700; }
+
+  /* Process section */
+  .process-section { background: var(--paper-2); }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 64px;
+  }
+
+  .process-step {
+    background: var(--paper);
+    padding: 40px 28px;
+    position: relative;
+  }
+
+  .step-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 52px;
+    color: var(--line);
+    line-height: 1;
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
+  }
+
+  .process-step h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .process-step p {
+    font-size: 13px;
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .step-arrow {
+    position: absolute;
+    top: 40px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 12px;
+    color: var(--ink);
+    font-weight: 900;
+  }
+
+  .process-step:last-child .step-arrow { display: none; }
+
+  /* Reference projects */
+  .projects-section { background: var(--paper); }
+
+  .ref-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 64px;
+  }
+
+  .ref-card {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 36px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ref-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--green);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s;
+  }
+
+  .ref-card:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0,0,0,0.06); }
+  .ref-card:hover::before { transform: scaleX(1); }
+
+  .ref-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .ref-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .ref-tag.type { background: var(--green-pale); color: var(--green-dim); }
+  .ref-tag.year { background: var(--paper-2); color: var(--text-2); }
+  .ref-tag.loc { background: var(--amber-pale); color: #b45309; }
+
+  .ref-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .ref-card p {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .ref-metrics {
+    display: flex;
+    gap: 32px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+
+  .ref-metric-val {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: var(--green-dim);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .ref-metric-label {
+    font-size: 12px;
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* FAQ */
+  .faq-section { background: var(--ink-2); color: white; }
+  .faq-section .eyebrow { color: var(--green); }
+  .faq-section h2 { color: white; }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.06);
+    margin-top: 64px;
+  }
+
+  .faq-item {
+    background: var(--ink-2);
+    padding: 36px;
+    transition: background 0.2s;
+  }
+
+  .faq-item:hover { background: var(--ink-3); }
+
+  .faq-q {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 14px;
+    line-height: 1.4;
+  }
+
+  .faq-a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.7;
+  }
+
+  .faq-a a { color: var(--green); text-decoration: underline; }
+
+  /* CTA Banner */
+  .cta-banner {
+    background: var(--green);
+    padding: 80px 32px;
+  }
+
+  .cta-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .cta-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 16px;
+    opacity: 0.6;
+  }
+
+  .cta-banner h2 {
+    color: var(--ink);
+    font-size: clamp(28px, 3.5vw, 44px);
+    margin-bottom: 12px;
+  }
+
+  .cta-banner p { font-size: 16px; color: rgba(15,25,35,0.7); max-width: 600px; }
+
+  .cta-btn-dark {
+    background: var(--ink);
+    color: var(--green);
+    padding: 18px 36px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'DM Mono', monospace;
+    white-space: nowrap;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cta-btn-dark:hover { background: var(--ink-3); transform: translateY(-2px); }
+
+  /* Footer */
+  footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.6);
+    padding: 72px 32px 32px;
+  }
+
+  .footer-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 64px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: 32px;
+  }
+
+  .footer-about h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .footer-about p { font-size: 14px; line-height: 1.6; max-width: 300px; }
+  .footer-about .partner { margin-top: 20px; font-size: 13px; }
+  .footer-about .partner a { color: var(--green); }
+
+  .footer-col h5 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 10px; }
+
+  .footer-col a {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover { color: var(--green); }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 12px;
+    font-family: 'DM Mono', monospace;
+    color: rgba(255,255,255,0.3);
+  }
+
+  .footer-bottom a { color: rgba(255,255,255,0.4); }
+  .footer-bottom a:hover { color: var(--green); }
+
+  /* Reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s, transform 0.7s;
+  }
+
+  .reveal.on { opacity: 1; transform: none; }
+
+  /* Mobile */
+  @media (max-width: 900px) {
+    .header-wrap { padding: 0 16px; }
+    nav { display: none; }
+    .hero { padding: 60px 16px; }
+    .hero-wrap { grid-template-columns: 1fr; gap: 40px; }
+    .hero-panel { display: none; }
+    .section { padding: 64px 16px; }
+    .project-grid { grid-template-columns: 1fr; gap: 1px; }
+    .process-steps { grid-template-columns: 1fr 1fr; }
+    .ref-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .cta-inner { grid-template-columns: 1fr; gap: 28px; }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+    footer { padding: 48px 16px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="ann">
+  Türkiye'de kazısız altyapı projeleri için referans portal —
+  <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Deltek'ten profesyonel destek alın</a>
+</div>
+
+<header>
+  <div class="header-wrap">
+    <div class="logo">
+      <div class="logo-ring">YD</div>
+      Yatay Delgi Projeleri
+    </div>
+
+    <nav>
+      <a href="#proje-tipleri">Proje Tipleri</a>
+      <a href="#maliyetler">Maliyetler</a>
+      <a href="#surec">Proje Süreci</a>
+      <a href="#referanslar">Referanslar</a>
+      <a href="#sss">SSS</a>
+      <a href="https://www.deltek.com.tr" target="_blank" rel="noopener" class="header-cta">→ Teklif İste</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-wrap">
+    <div>
+      <div class="hero-label">Türkiye Kazısız Altyapı Portalı</div>
+      <h1>Yatay delgi projeniz için <em>doğru karar</em> nereden başlar?</h1>
+      <p class="hero-desc">Belediyeler, kamu kurumları ve özel sektör yatırımcıları için HDD proje rehberi. Maliyet analizi, ihale hazırlığı, teknik şartname ve 20 yıllık proje deneyimi.</p>
+      <div class="hero-btns">
+        <a href="#maliyetler" class="btn-fill">Maliyet Tablosuna Bak →</a>
+        <a href="#surec" class="btn-outline">Proje Sürecini İncele</a>
+      </div>
+    </div>
+
+    <div class="hero-panel">
+      <div class="panel-title">// Sektör Verileri 2026</div>
+      <div class="panel-stat">
+        <span class="panel-stat-label">Türkiye HDD Pazar Büyüklüğü</span>
+        <span class="panel-stat-value green">~850M TL</span>
+      </div>
+      <div class="panel-stat">
+        <span class="panel-stat-label">Kazıya Göre Maliyet Avantajı</span>
+        <span class="panel-stat-value">%30–60</span>
+      </div>
+      <div class="panel-stat">
+        <span class="panel-stat-label">Tipik Proje Süresi (500 m)</span>
+        <span class="panel-stat-value">10–15 gün</span>
+      </div>
+      <div class="panel-stat">
+        <span class="panel-stat-label">Türkiye'de Aktif HDD Firması</span>
+        <span class="panel-stat-value">~40–60</span>
+      </div>
+      <div class="panel-stat">
+        <span class="panel-stat-label">Yıllık Sektör Büyümesi</span>
+        <span class="panel-stat-value green">%8.1</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item">DOĞALGAZ HATTI<span class="ticker-dot"></span></span>
+    <span class="ticker-item">FİBER OPTİK<span class="ticker-dot"></span></span>
+    <span class="ticker-item">İÇME SUYU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">ENERJİ KABLOSU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">ATIK SU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">HES BORU HATTI<span class="ticker-dot"></span></span>
+    <span class="ticker-item">YAĞMUR SUYU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">DOĞALGAZ HATTI<span class="ticker-dot"></span></span>
+    <span class="ticker-item">FİBER OPTİK<span class="ticker-dot"></span></span>
+    <span class="ticker-item">İÇME SUYU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">ENERJİ KABLOSU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">ATIK SU<span class="ticker-dot"></span></span>
+    <span class="ticker-item">HES BORU HATTI<span class="ticker-dot"></span></span>
+    <span class="ticker-item">YAĞMUR SUYU<span class="ticker-dot"></span></span>
+  </div>
+</div>
+
+<!-- PROJECT TYPES -->
+<section id="proje-tipleri" class="section project-types">
+  <div class="section-inner">
+    <div class="eyebrow">Proje Kategorileri</div>
+    <h2>Her altyapı türü<br>için doğru yöntem</h2>
+    <p class="section-desc">Doğalgaz dağıtımından fiber optik altyapısına, atık su hatlarından enerji nakliyesine — her proje türünün kendine özgü gereksinimleri ve en uygun kazısız çözümü vardır.</p>
+
+    <div class="project-grid reveal">
+      <div class="project-tile">
+        <div class="tile-num">01 —</div>
+        <div class="tile-icon">🔥</div>
+        <h3>Doğalgaz Hatları</h3>
+        <p>İletim ve dağıtım hatlarında HDD, en yaygın tercih. Belediye içi ve kırsal güzergahlarda basınçlı hat döşemesi.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">4&quot; – 24&quot;</span>
+          <span class="tile-spec">HDD</span>
+          <span class="tile-spec">BOTAŞ/Şehir Gazı</span>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="tile-num">02 —</div>
+        <div class="tile-icon">💧</div>
+        <h3>İçme Suyu & Kanalizasyon</h3>
+        <p>Su idareleri için büyük çaplı içme suyu ana hatları ve cazibeli akışlı kanalizasyon kolektörleri. Hassas eğim kontrolü şart.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">400–2000 mm</span>
+          <span class="tile-spec">HDD / Mikrotünel</span>
+          <span class="tile-spec">Belediye</span>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="tile-num">03 —</div>
+        <div class="tile-icon">⚡</div>
+        <h3>Enerji Nakil Hatları</h3>
+        <p>154 kV ve 380 kV yeraltı kablo geçişleri. OSB bağlantıları, trafo alanı altyapısı, yenilenebilir enerji sahası bağlantıları.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">HDD</span>
+          <span class="tile-spec">154 kV / 380 kV</span>
+          <span class="tile-spec">TEİAŞ / EÜAŞ</span>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="tile-num">04 —</div>
+        <div class="tile-icon">📡</div>
+        <h3>Fiber Optik & Telekomünikasyon</h3>
+        <p>Kentsel ve kırsal fiber optik altyapı. HDPE koruyucu boru içinde çoklu fiber kablo geçişleri. Minör kazı olmaksızın binlerce metre döşeme.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">4&quot; – 12&quot; HDPE</span>
+          <span class="tile-spec">HDD</span>
+          <span class="tile-spec">Telekom</span>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="tile-num">05 —</div>
+        <div class="tile-icon">🌊</div>
+        <h3>Nehir & Boğaz Geçişleri</h3>
+        <p>Hassas çevre koşullarında su altı boru hattı geçişleri. Boğaz, nehir, göl ve lagün geçişlerinde HDD'nin en kritik kullanım alanı.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">Offshore HDD</span>
+          <span class="tile-spec">Su Altı</span>
+          <span class="tile-spec">Çevre Korumalı</span>
+        </div>
+      </div>
+
+      <div class="project-tile">
+        <div class="tile-num">06 —</div>
+        <div class="tile-icon">🔄</div>
+        <h3>Altyapı Yenileme</h3>
+        <p>Mevcut eski boru hatlarının kazısız yenilenmesi. Pipe Bursting ile %50'ye kadar çap büyütme, trafik kapatmadan yerinde yenileme.</p>
+        <div class="tile-specs">
+          <span class="tile-spec">Pipe Bursting</span>
+          <span class="tile-spec">HDPE / Çelik</span>
+          <span class="tile-spec">Yenileme</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COST TABLE -->
+<section id="maliyetler" class="section cost-section">
+  <div class="section-inner">
+    <div class="eyebrow">// Maliyet Rehberi 2026</div>
+    <h2>Yatay delgi projeniz<br>ne kadara mal olur?</h2>
+    <p class="section-desc">Aşağıdaki tablo Türkiye ortalamasını yansıtmaktadır. Gerçek maliyet; zemin tipi, erişim koşulları ve boru malzemesine göre değişir.</p>
+
+    <div class="cost-table-wrap reveal">
+      <table class="cost-table">
+        <thead>
+          <tr>
+            <th>Boru Çapı</th>
+            <th>Yöntem</th>
+            <th>Tipik Uzunluk</th>
+            <th>Zemin</th>
+            <th>Birim Fiyat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>4" – 8" (100–200 mm)</td>
+            <td>HDD</td>
+            <td>200–1000 m</td>
+            <td>Yumuşak</td>
+            <td class="green">3.500–6.000 TL/m</td>
+          </tr>
+          <tr>
+            <td>12" – 16" (300–400 mm)</td>
+            <td>HDD</td>
+            <td>300–1500 m</td>
+            <td>Orta</td>
+            <td class="green">6.000–10.000 TL/m</td>
+          </tr>
+          <tr>
+            <td>20" – 24" (500–600 mm)</td>
+            <td>HDD</td>
+            <td>500–2000 m</td>
+            <td>Orta-Sert</td>
+            <td class="green">10.000–18.000 TL/m</td>
+          </tr>
+          <tr>
+            <td>800 mm HDPE</td>
+            <td>HDD</td>
+            <td>≤650 m</td>
+            <td>Orta</td>
+            <td class="green">14.000–22.000 TL/m</td>
+          </tr>
+          <tr>
+            <td>DN 1000–1400</td>
+            <td>Boru İtme</td>
+            <td>100–400 m</td>
+            <td>Orta-Sert</td>
+            <td class="green">18.000–30.000 TL/m</td>
+          </tr>
+          <tr>
+            <td>DN 1400–2000</td>
+            <td>Mikrotünel</td>
+            <td>200–1500 m</td>
+            <td>Her Zemin</td>
+            <td class="green">28.000–50.000 TL/m</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:20px; font-size:13px; color:rgba(255,255,255,0.4);">
+      * Fiyatlar 2026 yılı Türkiye ortalamalarıdır. KDV hariç, saha hazırlığı ve zemin etüdü dahil değildir. Gerçek teklif için <a href="https://www.deltek.com.tr" style="color:var(--green);" target="_blank" rel="noopener">Deltek'e başvurun</a>.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="surec" class="section process-section">
+  <div class="section-inner">
+    <div class="eyebrow">Proje Süreci</div>
+    <h2>Proje fikrinden uygulamaya<br>5 aşama</h2>
+    <p class="section-desc">Profesyonel bir HDD projesi belirli aşamaları takip eder. Her aşamada doğru kararlar, başarıyı ve bütçe kontrolünü garanti eder.</p>
+
+    <div class="process-steps reveal">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h4>Güzergah & Fizibilite</h4>
+        <p>Proje sınırlarının belirlenmesi, olası güzergah alternatifleri ve ön teknik analiz.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h4>Zemin Etüdü</h4>
+        <p>Sondaj kuyuları, SPT testleri, yeraltı suyu analizi, mevcut altyapı tespiti.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h4>Yöntem Seçimi & Tasarım</h4>
+        <p>Etüt bulgularına göre en uygun kazısız teknoloji, boru materyali ve güzergah tasarımı.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h4>İzin & İhale Süreci</h4>
+        <p>Belediye ve kamu izinleri, teknik şartname hazırlığı, ihale dosyası, firma değerlendirmesi.</p>
+        <div class="step-arrow">→</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">05</div>
+        <h4>Uygulama & Kontrol</h4>
+        <p>Saha uygulaması, kalite kontrol, süpervizyon, as-built çizimler ve teslimat.</p>
+        <div class="step-arrow">→</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCE PROJECTS -->
+<section id="referanslar" class="section projects-section">
+  <div class="section-inner">
+    <div class="eyebrow">Referans Projeler</div>
+    <h2>Türkiye'den tamamlanan<br>büyük ölçek projeler</h2>
+    <p class="section-desc">Yatay delgi teknolojisinin Türkiye'de nasıl uygulandığını gösteren gerçek proje örnekleri. Her proje farklı bir sektörden, farklı bir zorluğu temsil ediyor.</p>
+
+    <div class="ref-grid reveal">
+      <div class="ref-card">
+        <div class="ref-tags">
+          <span class="ref-tag type">HDD</span>
+          <span class="ref-tag year">2024</span>
+          <span class="ref-tag loc">İstanbul Boğazı</span>
+        </div>
+        <h3>İstanbul Boğazı Doğalgaz Geçişi</h3>
+        <p>Boğaz altından 1.420 metrelik 24" orta basınçlı doğalgaz hattı. 35 metre derinlikte deniz tabanı altında hassas HDD uygulaması.</p>
+        <div class="ref-metrics">
+          <div>
+            <div class="ref-metric-val">1.420 m</div>
+            <div class="ref-metric-label">Hat Uzunluğu</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">24"</div>
+            <div class="ref-metric-label">Boru Çapı</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">35 m</div>
+            <div class="ref-metric-label">Maks. Derinlik</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ref-card">
+        <div class="ref-tags">
+          <span class="ref-tag type">Mikrotünel</span>
+          <span class="ref-tag year">2023</span>
+          <span class="ref-tag loc">Bursa OSB</span>
+        </div>
+        <h3>Bursa OSB Atık Su Kollektörü</h3>
+        <p>Organize Sanayi Bölgesi için 1.880 metrelik DN 1400 mikrotünel uygulaması. Sert kaya formasyonunda hassas ilerleme.</p>
+        <div class="ref-metrics">
+          <div>
+            <div class="ref-metric-val">1.880 m</div>
+            <div class="ref-metric-label">Hat Uzunluğu</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">DN 1400</div>
+            <div class="ref-metric-label">Çap</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">Kaya</div>
+            <div class="ref-metric-label">Zemin</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ref-card">
+        <div class="ref-tags">
+          <span class="ref-tag type">HDD</span>
+          <span class="ref-tag year">2022</span>
+          <span class="ref-tag loc">Gaziantep</span>
+        </div>
+        <h3>Gaziantep OSB Enerji Nakil Hattı</h3>
+        <p>OSB için 1.450 metrelik 154 kV yeraltı kablo geçişi. Yüksek voltaj enerji altyapısının HDD ile kesintisiz döşenmesi.</p>
+        <div class="ref-metrics">
+          <div>
+            <div class="ref-metric-val">1.450 m</div>
+            <div class="ref-metric-label">Hat Uzunluğu</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">154 kV</div>
+            <div class="ref-metric-label">Gerilim</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">0</div>
+            <div class="ref-metric-label">Trafik Kesintisi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ref-card">
+        <div class="ref-tags">
+          <span class="ref-tag type">HDD</span>
+          <span class="ref-tag year">2021</span>
+          <span class="ref-tag loc">Doha, Katar</span>
+        </div>
+        <h3>Katar Denizaltı Boru Hattı</h3>
+        <p>Doha açıklarında 1.080 metrelik 22" denizaltı boru hattı. Yurt dışında gerçekleştirilen büyük ölçek HDD projesi.</p>
+        <div class="ref-metrics">
+          <div>
+            <div class="ref-metric-val">1.080 m</div>
+            <div class="ref-metric-label">Hat Uzunluğu</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">22"</div>
+            <div class="ref-metric-label">Boru Çapı</div>
+          </div>
+          <div>
+            <div class="ref-metric-val">Denizaltı</div>
+            <div class="ref-metric-label">Geçiş Tipi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="sss" class="section faq-section">
+  <div class="section-inner">
+    <div class="eyebrow">// SSS</div>
+    <h2>Proje sahiplerinin<br>en çok sorduğu sorular</h2>
+
+    <div class="faq-grid reveal">
+      <div class="faq-item">
+        <div class="faq-q">Yatay delgi ihalesi nasıl hazırlanır?</div>
+        <div class="faq-a">İyi bir HDD ihalesi için zemin etüt raporu, güzergah planı, boru teknik şartnamesi, çevresel etki değerlendirmesi ve kalite kontrol planı gereklidir. Eksik ihale dosyası, yanlış teklifler ve ileride hukuki sorunlara yol açar. <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Deltek</a> ihale hazırlığı danışmanlığı sunar.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Belediyeler için HDD projesinde hangi izinler gerekiyor?</div>
+        <div class="faq-a">Karayolu geçişleri için Karayolları, demiryolu için TCDD, köprü ve köprülüyol için ilgili idare, nehir geçişleri için DSİ izni gerekir. Şehir içi güzergahlar için ilgili belediyenin yol kazı izni ve şantiye kurma belgesi zorunludur.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">HDD projesi ne kadar sürede tamamlanır?</div>
+        <div class="faq-a">Zemin etüdü 4-6 hafta, izin süreci 4-12 hafta, saha uygulaması 2-8 haftadır. Toplam proje süresi genellikle 4-8 ay arasındadır. Acil projelerde etüt ve izin süreçleri paralelde yürütülürse 2-3 aya indirilebilir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">HDD firmalarını değerlendirirken nelere bakmalıyım?</div>
+        <div class="faq-a">Makine parkı ve kapasitesi, tamamlanan benzer proje referansları, teknik personel sertifikaları (NASTT, DCA üyeliği), sigorta ve teminat durumu ve önerilen çamur yönetim planı temel kriterlerdir.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Zemin etüdü olmadan ihaleye çıkılır mı?</div>
+        <div class="faq-a">Çıkılabilir ama risklidir. Etütsüz ihaleye gelen teklifler %40-60 daha yüksek veya çok düşük olabilir. Uygulama sırasında zemin sürprizlerinde ek bedel talepleri gelir. Etüt maliyeti proje bütçesinin %3-5'i iken sağladığı güvence çok daha büyüktür.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">HDD ile açık kazının toplam maliyeti nasıl karşılaştırılır?</div>
+        <div class="faq-a">Doğrudan uygulama maliyeti HDD'de %20-40 daha yüksek görünse de yol onarımı, trafik düzenleme, peyzaj restorasyonu ve süre maliyetleri eklendiğinde HDD toplamda %30-60 daha ekonomik olur. Şehir merkezlerinde fark daha da büyür.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="cta-inner">
+    <div>
+      <div class="cta-label">// Profesyonel Destek</div>
+      <h2>Projeniz için doğru firmayı buldunuz.</h2>
+      <p>20 yılı aşkın tecrübe, 196.000+ metre delgi referansı ve Türkiye genelinde tamamlanan projelerle <strong>Deltek Kazısız Yatay Delgi Teknolojileri</strong>, projenizin her aşamasında yanınızda.</p>
+    </div>
+    <a href="https://www.deltek.com.tr" target="_blank" rel="noopener" class="cta-btn-dark">
+      Deltek.com.tr →
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-about">
+        <h4>Yatay Delgi Projeleri</h4>
+        <p>Belediyeler, kamu kurumları ve özel sektör yatırımcıları için Türkiye'nin kazısız altyapı proje rehberi.</p>
+        <p class="partner">İçerik desteği: <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Deltek Kazısız Yatay Delgi Teknolojileri</a></p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Proje Tipleri</h5>
+        <ul>
+          <li><a href="#proje-tipleri">Doğalgaz Hatları</a></li>
+          <li><a href="#proje-tipleri">İçme Suyu</a></li>
+          <li><a href="#proje-tipleri">Enerji Nakil</a></li>
+          <li><a href="#proje-tipleri">Fiber Optik</a></li>
+          <li><a href="#proje-tipleri">Nehir Geçişleri</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Kaynaklar</h5>
+        <ul>
+          <li><a href="#maliyetler">Maliyet Tablosu</a></li>
+          <li><a href="#surec">Proje Süreci</a></li>
+          <li><a href="#referanslar">Referanslar</a></li>
+          <li><a href="#sss">SSS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Diğer Siteler</h5>
+        <ul>
+          <li><a href="https://www.yataydelgi.com" target="_blank" rel="noopener">yataydelgi.com</a></li>
+          <li><a href="https://www.yataysondaj.org" target="_blank" rel="noopener">yataysondaj.org</a></li>
+          <li><a href="https://www.deltek.com.tr" target="_blank" rel="noopener">deltek.com.tr</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Yatay Delgi Projeleri · Tüm hakları saklıdır</span>
+      <span>Bağımsız bilgi platformu · <a href="https://www.deltek.com.tr" target="_blank" rel="noopener">Deltek</a> desteğiyle</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(e => {
+    e.forEach(el => { if (el.isIntersecting) { el.target.classList.add('on'); obs.unobserve(el.target); } });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
